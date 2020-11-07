@@ -7,8 +7,10 @@
             <h1>Todo's</h1>
           </div>
           <div class="o-col t-todo-app__main-container">
-            <TodoItem v-bind:item="item" v-for="item in items" v-bind:key="item.id" @doneClicked = "setItemDone" @removeClicked = "removeItem"/>
-            <TodoInput />
+            <TodoItem v-bind:item="item" v-for="item in items" 
+            v-bind:key="item.id" @doneClicked = "setItemDone" 
+            @removeClicked = "removeItem"/>
+            <TodoInput @onSubmit="addItem" />
           </div>
         </div>
       </div>
@@ -47,9 +49,9 @@ export default {
         this.items[index].completed = false;
       }
     },
-    addItem() {
+    addItem(newItem) {
       this.items.push({
-        title: this.newItem,
+        title: newItem,
         completed: false,
         id: Math.random()
       })
