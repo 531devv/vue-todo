@@ -49,10 +49,18 @@ body {
 
 .t-todo-app__col {
     height: 100vh;
+    margin-top: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+}
+
+@media (min-width: 800px) {
+    .t-todo-app__col {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
 }
 
 .t-todo-app__container {
