@@ -61,6 +61,7 @@ body {
     background: linear-gradient(180deg, #BC6FF1 0%, #52057B 57.52%);
     box-shadow: 3px 6px 40px rgba(138, 120, 120, 0.18);
     border-radius: 30px;
+    overflow: hidden;
 }
 
 .t-todo-app__header {
@@ -76,10 +77,20 @@ body {
 }
 
 .t-todo-app__main-container {
-    height: 491px;
     background-color: #FFF;
     border-radius: 30px;
     padding: 25px;
+    overflow: scroll;
+    height: 491px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.t-todo-app__todo-item-box {
+    height: 410px;
 }
 
 .t-todo-app__text-box {

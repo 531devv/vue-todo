@@ -14,6 +14,7 @@ export default {
     methods: {
         addItem() {
             this.$emit('onSubmit', this.newItem);
+            this.newItem = '';
         }
     }
 }
