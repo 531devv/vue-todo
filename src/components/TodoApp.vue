@@ -27,8 +27,11 @@ export default {
     return {
       newItem: '',
       items: [
-        {id: 1, title: 'Zrobić zakupy', completed: true},
-        {id: 2, title: 'Zrobić cos', completed: false}
+        {id: 1, title: 'Make dinner 🍗', completed: false},
+        {id: 2, title: 'Buy a milk 🥛', completed: false},
+        {id: 3, title: 'Go for a walk 🚶', completed: false},
+        {id: 4, title: 'Play games 🎮', completed: false},
+        {id: 5, title: 'Drink yerba 🧉', completed: false}
       ]
     }
   },
