@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="t-todo-app">
     <TodoApp />
   </div>
 </template>

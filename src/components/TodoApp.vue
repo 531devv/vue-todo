@@ -1,8 +1,17 @@
 <template>
-  <div>
-    <input type="text" placerholder="todo" v-model="newItem" />
-    <button @click="addItem">Dodaj</button>
-    <TodoItem v-bind:item="item" v-for="item in items" v-bind:key="item.id" @removeClicked = "removeItem" />
+  <div class="o-container">
+    <div class="o-row">
+      <div class="o-col t-todo-app__col">
+        <div class="t-todo-app__container">
+          <div class="o-col t-todo-app__header">
+            <h1>Todo's</h1>
+          </div>
+          <div class="o-col t-todo-app__main-container">
+            <TodoItem v-bind:item="item" v-for="item in items" v-bind:key="item.id" @removeClicked = "removeItem" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
