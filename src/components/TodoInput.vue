@@ -1,6 +1,7 @@
 <template>
     <div>
-        <input type="text" v-model="newItem" v-on:keyup.enter="addItem" />
+        <input class="c-input" type="text" v-model="newItem" 
+        v-on:keyup.enter="addItem" />
     </div>
 </template>
 

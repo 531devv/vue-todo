@@ -27,8 +27,8 @@ export default {
     return {
       newItem: '',
       items: [
-        {id: 1, title: 'Zrobić zakupy', completed: false},
-        {id: 2, title: 'Zrobić cos', completed: true}
+        {id: 1, title: 'Zrobić zakupy', completed: true},
+        {id: 2, title: 'Zrobić cos', completed: false}
       ]
     }
   },

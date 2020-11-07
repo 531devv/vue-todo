@@ -111,6 +111,19 @@ body {
     padding-right: 5px;
 }
 
+.c-input {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 20px;
+    border: 1px solid #BC6FF1;
+    border-radius: 30px;
+}
+
+.c-input:focus {
+    outline: none;
+}
+
 .u-done {
     display: block;
     width: 24px;
