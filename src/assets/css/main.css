@@ -1,15 +1,13 @@
-/* Medium up */
-@media (min-width: 800px) {
-
-}
-
-/* Large up */
-@media (min-width: 1200px) {
-
-}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -28,9 +26,15 @@ body {
 }
 
 .o-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
 }
@@ -50,15 +54,26 @@ body {
 .t-todo-app__col {
     height: 100vh;
     margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 @media (min-width: 800px) {
     .t-todo-app__col {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin: 0;
     }
 }
@@ -66,16 +81,25 @@ body {
 .t-todo-app__container {
     width: 678px;
     height: 678px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#BC6FF1), color-stop(57.52%, #52057B));
+    background: -o-linear-gradient(top, #BC6FF1 0%, #52057B 57.52%);
     background: linear-gradient(180deg, #BC6FF1 0%, #52057B 57.52%);
-    box-shadow: 3px 6px 40px rgba(138, 120, 120, 0.18);
+    -webkit-box-shadow: 3px 6px 40px rgba(138, 120, 120, 0.18);
+            box-shadow: 3px 6px 40px rgba(138, 120, 120, 0.18);
     border-radius: 30px;
 }
 
 .t-todo-app__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 188px;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #FAFAFA;
     font-style: normal;
     font-weight: 600;
@@ -98,14 +122,21 @@ body {
 .t-todo-app__todo-item-box {
     height: 410px;
     overflow: scroll;
+    scrollbar-width: none;  /* Firefox */
 }
 
 .t-todo-app__text-box {
     height: 40px;
     border-bottom: 1px solid #BC6FF1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .t-todo-app__text {
@@ -114,8 +145,12 @@ body {
 }
 
 .t-todo-app__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-right: 5px;
 }
 
@@ -147,4 +182,8 @@ body {
     height: 24px;
     background-image: url('../images/remove.svg');
     cursor: pointer;
+}
+
+.u-mt-5 {
+    margin-top: 5px;
 }

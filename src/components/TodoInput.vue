@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="u-mt-5">
         <input class="c-input" type="text" v-model="newItem" 
         v-on:keyup.enter="addItem" />
     </div>
