@@ -8,6 +8,7 @@
           </div>
           <div class="o-col t-todo-app__main-container">
             <TodoItem v-bind:item="item" v-for="item in items" v-bind:key="item.id" @doneClicked = "setItemDone" @removeClicked = "removeItem"/>
+            <TodoInput />
           </div>
         </div>
       </div>
@@ -18,6 +19,7 @@
 <script>
 
 import TodoItem from './TodoItem.vue';
+import TodoInput from './TodoInput.vue';
 export default {
   data() {
     return {
@@ -29,7 +31,8 @@ export default {
     }
   },
   components: {
-      TodoItem
+      TodoItem,
+      TodoInput
   },
   methods: {
     removeItem(id) {
