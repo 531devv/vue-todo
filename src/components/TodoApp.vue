@@ -7,7 +7,7 @@
             <h1>Todo's</h1>
           </div>
           <div class="o-col t-todo-app__main-container">
-            <TodoItem v-bind:item="item" v-for="item in items" v-bind:key="item.id" @removeClicked = "removeItem" />
+            <TodoItem v-bind:item="item" v-for="item in items" v-bind:key="item.id" @doneClicked = "setItemDone" @removeClicked = "removeItem"/>
           </div>
         </div>
       </div>
@@ -34,7 +34,15 @@ export default {
   methods: {
     removeItem(id) {
       const index = this.items.findIndex(el => el.id === id);
-      this.items[index].completed = true;
+      this.items.splice(index, 1);
+    },
+    setItemDone(id) {
+      const index = this.items.findIndex(el => el.id === id);
+      if(!this.items[index].completed) {
+        this.items[index].completed = true;
+      } else {
+        this.items[index].completed = false;
+      }
     },
     addItem() {
       this.items.push({

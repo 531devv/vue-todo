@@ -98,6 +98,7 @@ body {
 .t-todo-app__icons {
     display: flex;
     align-items: center;
+    padding-right: 5px;
 }
 
 .u-done {
@@ -113,6 +114,6 @@ body {
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url('../images/done.svg');
+    background-image: url('../images/remove.svg');
     cursor: pointer;
 }
