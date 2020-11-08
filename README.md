@@ -1,4 +1,6 @@
 # todo
+## Preview:
+https://531devv.github.io/vue-todo/
 
 ## Project setup
 ```
